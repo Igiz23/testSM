@@ -1,0 +1,31 @@
+:root {
+    --x: 400px;
+    --y: 400px;
+}
+
+@keyframes moving {
+    from {transform: translate(0, 0);}
+    to {
+    transform: translate(var(--x), var(--y));
+}
+
+}
+ #board {
+    position: relative;
+    background-color: white;
+    width: 1000px;
+    height: 1000px;
+    margin: auto auto;
+}
+
+#ball {
+    position: absolute;
+    margin-right: -50%;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-color: greenyellow;
+    transform: translate(-50%, -50%);
+}
